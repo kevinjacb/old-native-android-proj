@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/weatherbg">
+
+    <Button
+        android:id="@+id/enquiry"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:text="What is the weather?"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        app:backgroundTintMode="multiply"
+        android:onClick="weather"
+        app:iconTint="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="323dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Enter the city"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColorHint="#A19494"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/enquiry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/selectedCity"
+        android:layout_width="367dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="324dp"
+        android:gravity="center"
+        android:text="london"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#9AE5EF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enquiry"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <TextView
+        android:id="@+id/Info"
+        android:layout_width="301dp"
+        android:layout_height="197dp"
+        android:layout_marginBottom="76dp"
+        android:gravity="center"
+        android:text="Loading"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedCity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

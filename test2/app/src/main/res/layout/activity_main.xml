@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Fe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="fadeinto"
+        app:srcCompat="@drawable/ironm1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <ImageView
+        android:id="@+id/Fe2"
+        android:onClick="fadeinto"
+        android:alpha="1"
+        android:translationX="-2000px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ironm2"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="166dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
